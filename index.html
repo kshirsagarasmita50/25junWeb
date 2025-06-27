@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes of Input Element </title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        header,footer
+        {
+            width: 80%;
+            margin: auto;
+            background-color: blanchedalmond;
+            padding: 20px;
+            text-align: center;
+            color: brown;
+        }
+        main{
+            background-color: bisque;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1>User Input,using the &lt;form&gt; Element</h1>
+       <h2>Accepting user input,through the &lt;input&gt;Element </h2>
+       </header>
+<main>
+   <h3> Registration </h3>
+    <form action="UserReg.php">
+        <fieldset><legend> User Registration</legend>
+        <lable for="uname">Username: <input type="text" name="uname" id="uname"></lable>
+        <br><br>
+        <lable for="mobNo">Mobile No: <input type="number" name="mobno" id="mobno"></lable>
+        <br><br>
+        <lable for="emailID">E-mail: <input type="email" name="emailID" id="emailID"></lable>
+        <br><br>
+        <lable for="upass">Password: <input type="password" name="upass" id="upass"></lable>
+        <br><br>
+        <label for="conpass">Conform Password:<input type="password" name="conpass" id="conpass"></label>
+        <br><br>
+        <label for="dob">Date of Birth:  <input type="date" name="dob" id="dob"></label>
+        <br><br>
+        <label for="idpic">Passport Size Photo <input type="file" name="idpic" id="idpic"></label>
+        <br>
+        
+        <!--Radio Button-->
+         <h3> Select Gender</h3>
+         <label for="male"><input type="radio" name="gender" value="male"> MALE</label>
+         <label for="female"><input type="radio" name="gender" value="female"> FEMALE</label>
+         <label for="other"><input type="radio" name="gender" value="other"> OTHER</label>
+         <br>
+         
+         <!-- Check Box-->
+          <h3> Select Technologies</h4>
+          <label for="cprogramme"><input type="checkbox" name="cprogramme" id="cprogramme" value="cprogramme">C programming language
+        </label><br>
+          <label for="CPP"><input type="checkbox" name="CPP" id="CPP" value="CPP">Object Oritent programming language </label><br>
+         <label for="JPR"><input type="checkbox" name="JPR" id="JPR" value="JPR">Java programming language </label><br>
+        <label for="python"><input type="checkbox" name="python" id="python" value="Python">python  programming language </label>
+          <br><br>          
+       
+          <!-- TextArea-->
+         <label for="address"><b>Postal Address:</b><textarea name="address" id="address" row="4" cols="30"></textarea>
+            <br> <br>
+            <input type="submit" value="Registration">
+        </label>
+   </fieldset>
+   </form>
+</main>
+<footer>
+    <h3> Web page layout</h3>
+    <p> &copy; copyright protected:2025-2026</p>
+</footer>
+</body>
+</html>
